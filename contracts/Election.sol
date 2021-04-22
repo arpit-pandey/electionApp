@@ -1,13 +1,13 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.5.16;
 
 contract Election {
     // Model a Candidate
     struct Candidate {
-        uint256 id;
+        uint id;
         string name;
-        uint256 voteCount;
+        uint voteCount;
     }
-// Store accounts that have voted
+    // Store accounts that have voted
     mapping(address => bool) public voters;
     // Store Candidates
     // Fetch Candidate
